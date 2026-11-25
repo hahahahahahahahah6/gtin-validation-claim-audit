@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gtin-validation-claim-audit"
+version = "0.1.0"
+description = "Offline static audit of documented Global Trade Item Number claims"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+
+[project.scripts]
+gtin-validation-claim-audit = "gtin_validation_claim_audit.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["gtin_validation_claim_audit*"]
